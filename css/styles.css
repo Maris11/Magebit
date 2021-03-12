@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+    position: absolute;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%) fixed;
+}
+.imagebox {
+    background: url("/image_summer.png") no-repeat right center;
+    background-size: cover;
+    padding: 0;
+    width: 1240px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    left:680px;
+    z-index: -1;
+}
+.content {
+    width: 680px;
+    left:0;
+    position: absolute;
+}
+.topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.topbar li {
+    float: left;
+    padding-left: 30px;
+}
+.topbar li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #6A707B;
+}
+.pineapple {
+    background: url("/pineapple.png") no-repeat;
+    width: 25px;
+    height: 40px;
+    margin-right: 15px;
+}
+.topbar {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.pineapple ~ div {
+    padding-top: 15px;
+}
+.links {
+    padding-left: 83px;
+}
+.heading {
+    font-family: Georgia, serif !important;
+    font-size: 32px;
+    line-height: 44px;
+    width: 400px;
+}
+.text {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+    width: 400px;
+}
+.textblock {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 234px;
+    width: 400px;
+}
+.input {
+    display: inline-flex;
+    margin-left: 100px;
+}
+#email {
+    width: 663px;
+    height: 70px;
+    border: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+    padding-left: 44px;
+    padding-right: 85px;
+    font-size: 16px;
+}
+.input:hover {
+    box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+}
+#email:focus {
+    box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+    border: 1px solid #4066A5;
+    border-left: 4px solid #4066A5;
+    outline: none;
+}
+#email:focus ~ .submit {
+    background: transparent url("/ic_arrow_blue.svg") no-repeat 21px 50%;
+}
+#tos {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+form {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+}
+.submit {
+    background: transparent url("/ic_arrow.svg") no-repeat 21px 50%;
+    outline: 0;
+    border: 0;
+    height: 70px;
+    width: 85px;
+    margin-left: -85px;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    background-color: #F2F5FA;
+    border: 1px solid #E3E3E4;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 7px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+    color: #6A707B;
+}
+.TOS {
+    position: relative;
+    margin-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 28px;
+}
+label input:checked ~ .checkmark {
+    background-color: #4066A5;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+label input:checked ~ .checkmark:after {
+    display: block;
+}
+label .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 4px;
+    height: 11px;
+    border: solid white;
+    border-radius: 2px;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+label a {
+    color:black;
+}
+label a:hover {
+    color: #4066A5;
+}
+label a:focus {
+    color: #233759;
+}
+#error {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 20px;
+    color: red;
+    font-weight: bold;
+}
+hr {
+    width:400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: solid 1px #E2E3E4;
+}
+.social {
+    width: 260px;
+    height: 46px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.icon {
+    border: solid 2px #E2E3E4;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.icon:first-child {
+    margin-left: 0;
+}
+i {
+    color: grey;
+    width: 16px;
+}
+.icon:hover {
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+.icon:hover i {
+    color: white;
+}
+.fbk:hover {
+    background-color: #4267B2;
+}
+.ig:hover {
+    background-color: #C13584;
+}
+.tw:hover {
+    background-color: #1DA1F2;
+}
+.yt:hover {
+    background-color: #FF0000;
+}
+.fbk:focus {
+    background-color: #2F4A80;
+}
+.ig:focus {
+    background-color: #8F2762;
+}
+.tw:focus {
+    background-color: #177FBF;
+}
+.yt:focus {
+    background-color: #CC0000;
+}
+.success {
+    background: url("/success.png") no-repeat;
+    margin-top: 129px;
+    width: 400px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        width: 100%;
+    }
+    .imagebox {
+        left:0;
+    }
+    .content {
+        position: absolute;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .topbar li {
+        padding-left: 20px;
+    }
+    .topbar li:first-child {
+        padding-left: 0;
+    }
+    .pineapple {
+        margin-bottom: 2px;
+        margin-right: 104px;
+        margin-left: 20px;
+    }
+    .pineappletext {
+        display: none;
+    }
+    .topbar {
+        margin-top: 0;
+        background: white;
+        height: 66px;
+        width: 100%;
+        position: fixed;
+    }
+    .pineapple ~ div {
+        padding-top: 0;
+    }
+    .links {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .other {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%) fixed;
+        margin-top: 188px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 335px;
+        height: 391px;
+    }
+    .heading {
+        font-family: Georgia, serif !important;
+        font-size: 24px;
+        line-height: 34px;
+        width: 295px;
+    }
+    .text {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 26px;
+        width: 295px;
+    }
+    .textblock {
+        position: relative;
+        padding-top: 30px;
+        width: 295px;
+    }
+    .input {
+        margin-left: 20px;
+    }
+    #email {
+        width: 295px;
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+    #email:focus ~ .submit {
+        background: transparent url("/ic_arrow_blue.svg") no-repeat 11px 50%;
+    }
+    .submit {
+        background: transparent url("/ic_arrow.svg") no-repeat 11px 50%;
+        height: 60px;
+        width: 50px;
+        margin-left: -50px;
+    }
+    form {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 26px;
+        width: 26px;
+        background-color: #F2F5FA;
+        border: 1px solid #E3E3E4;
+        border-radius: 5px;
+    }
+    .TOS {
+        margin-top: 21px;
+        margin-left: 20px;
+        width: 295px;
+    }
+    #error {
+        margin-top: 10px;
+        width: 295px;
+    }
+    hr {
+        width:295px;
+        margin-top: 0;
+    }
+    .social {
+        height: 46px;
+        width: 230px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .icon {
+        margin-left: 10px;
+        padding: 15px;
+    }
+    .success {
+        top:30px;
+        width: 295px;
+    }
+}
